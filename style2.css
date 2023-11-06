@@ -1,0 +1,84 @@
+/* Reset some default browser styles */
+body, h1, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 3em;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #1cb5e0, #4c8bf5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #1995ca, #4277ed);
+  }
+  
+  #result {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style individual buttons */
+  #rock {
+    background: linear-gradient(to bottom, #ff3a3a, #ff7f7f);
+  }
+  
+  #paper {
+    background: linear-gradient(to bottom, #6dff69, #5fcc3f);
+  }
+  
+  #scissors {
+    background: linear-gradient(to bottom, #9e6bfa, #7c2dce);
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2em;
+    }
+  
+    button {
+      font-size: 1.2em;
+    }
+  }
+  
